@@ -1,0 +1,30 @@
+.intro-card-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.single-card {
+	text-align: center;
+	padding: 90px 48px;
+	border: 5px solid #000;
+	border-radius: 18px;
+}
+
+.col-lg-4 {
+	&:nth-child(1) {
+		.single-card {
+			border-color: rgb(141, 71, 71);
+		}
+	}
+	&:nth-child(2) {
+		.single-card {
+			border-color: rebeccapurple;
+		}
+	}
+	&:nth-child(3) {
+		.single-card {
+			border-color: salmon;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.hero-area {
+	height: 100vh;
+	background: rgb(235, 234, 250);
+	padding: 230px 0;
+}
+.hero-content {
+	h2 {
+		font-size: 90px;
+		line-height: 108px;
+		letter-spacing: -2px;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 30px;
+		line-height: 42px;
+		color: var(--pColor);
+		margin-bottom: 50px;
+	}
+}

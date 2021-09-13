@@ -1,0 +1,42 @@
+.header-area {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 50px 0;
+	z-index: 900;
+	.navbar-nav {
+		.nav-item {
+			margin-right: 20px;
+			a {
+				font-size: 20px;
+				color: var(--textColor);
+			}
+			&:hover > a {
+				color: var(--themeColor);
+			}
+		}
+	}
+}
+.social-link {
+	li {
+		display: inline-block;
+		margin-left: 20px;
+
+		i {
+			font-size: 21px;
+		}
+		.fa-facebook {
+			color: #3b5998;
+		}
+		.fa-twitter {
+			color: #1da1f2;
+		}
+		.fa-youtube-play {
+			color: #ff1e00;
+		}
+		.fa-instagram {
+			color: #dd4b39;
+		}
+	}
+}

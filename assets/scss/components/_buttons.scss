@@ -1,0 +1,44 @@
+.btn {
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: var(--white);
+	background: var(--themeColor);
+	padding: 0 50px;
+	border: 2px solid var(--themeColor);
+	border-radius: 8px;
+	transition: 0.3s;
+	&:hover {
+		background: transparent;
+		color: vra(--textColor);
+	}
+	&.btn-lg {
+		text-transform: capitalize;
+		font-size: 24px;
+		height: 70px;
+		line-height: 70px;
+		padding: 0 60px;
+	}
+	&.btn-outline {
+		background: transparent;
+		color: vra(--textColor);
+		text-transform: capitalize;
+		&:hover {
+			background: var(--themeColor);
+			color: var(--white);
+		}
+	}
+	&.btn-outline-sm {
+		font-size: 18px;
+		padding: 0 40px;
+		background: transparent;
+		text-transform: capitalize;
+		color: var(--textColor);
+		&:hover {
+			background: var(--themeColor);
+			color: var(--white);
+		}
+	}
+}

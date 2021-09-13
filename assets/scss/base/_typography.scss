@@ -1,0 +1,27 @@
+body {
+	font-family: var(--overpassFont);
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--overpassFont);
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+}
+h4 {
+	font-size: 30px;
+	line-height: 42px;
+	letter-spacing: -2px;
+}
+p {
+	font-family: var(--robotoFont);
+	font-size: 20px;
+	line-height: 32px;
+	color: var(--pColor);
+}
