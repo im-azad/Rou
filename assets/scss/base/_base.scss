@@ -14,8 +14,9 @@ a {
 	color: inherit;
 	margin: 0;
 	padding: 0;
+	transition: all 0.3s;
 	&:hover {
-		color: inherit;
+		color: var(--themeColor);
 	}
 }
 ul {
@@ -30,12 +31,12 @@ li {
 
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1170px;
+		max-width: 1180px;
 	}
 }
 
 .standard-section {
-	padding: 190px 0;
+	padding: 165px 0 190px 0;
 }
 
 .section-title {
@@ -44,7 +45,7 @@ li {
 		font-size: 24px;
 		line-height: 72px;
 		color: var(--themeColor);
-		letter-spacing: 0.2em;
+		letter-spacing: -0.025px;
 	}
 	h2 {
 		font-size: 60px;

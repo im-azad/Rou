@@ -1,18 +1,18 @@
 .btn {
-	height: 50px;
-	line-height: 50px;
+	height: 60px;
+	line-height: 60px;
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
 	color: var(--white);
 	background: var(--themeColor);
-	padding: 0 50px;
+	padding: 0 45px;
 	border: 2px solid var(--themeColor);
-	border-radius: 8px;
+	border-radius: 7px;
 	transition: 0.3s;
 	&:hover {
 		background: transparent;
-		color: vra(--textColor);
+		color: var(--textColor);
 	}
 	&.btn-lg {
 		text-transform: capitalize;
@@ -23,7 +23,7 @@
 	}
 	&.btn-outline {
 		background: transparent;
-		color: vra(--textColor);
+		color: var(--textColor);
 		text-transform: capitalize;
 		&:hover {
 			background: var(--themeColor);
@@ -31,7 +31,8 @@
 		}
 	}
 	&.btn-outline-sm {
-		font-size: 18px;
+		height: 50px;
+		line-height: 50px;
 		padding: 0 40px;
 		background: transparent;
 		text-transform: capitalize;
