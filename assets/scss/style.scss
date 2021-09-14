@@ -1,17 +1,7 @@
 /* ===================================
-Project Name 	:   
+Project Name 	:   Rou
 File 			:  CSS Base
 Version 		:  1.0;
-Author 			:  
-Developer:		:  
-
-=====================================*/
-
-/* ==================================
-CSS table Of content
-
-    01. Base style
-    02. Typography style
 
 =====================================*/
 
@@ -68,3 +58,13 @@ CSS table Of content
     10. Team area style
 ------------------*/
 @import 'layout/team';
+
+/* ---------------
+    11. Testimonial area style
+------------------*/
+@import 'layout/testimonial';
+
+/* ---------------
+    12. Testimonial area style
+------------------*/
+@import 'layout/contact';
