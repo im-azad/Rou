@@ -53,3 +53,21 @@ li {
 		letter-spacing: -2px;
 	}
 }
+
+.view-all-link {
+	text-align: center;
+	a {
+		font-size: 18px;
+		line-height: 36px;
+		font-weight: 800;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: -10px;
+			left: 0;
+			width: 100%;
+			border-bottom: 2px solid var(--themeColor);
+		}
+	}
+}

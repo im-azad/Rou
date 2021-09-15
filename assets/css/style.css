@@ -8,6 +8,7 @@ Version 		:  1.0;
   --overpassFont: 'Overpass', sans-serif;
   --robotoFont: 'Roboto', sans-serif;
   --white: #ffffff;
+  --grayBg: #f3f3f4;
   --themeColor: #c04ae2;
   --textColor: #111111;
   --pColor: #5e5858;
@@ -15,6 +16,7 @@ Version 		:  1.0;
   --lightgreen: #54d6a1;
   --yellowColor: #fe9a3f;
   --grayColor: #adb0ba;
+  --borderColor: #b3bed1;
 }
 
 /* ----------------
@@ -81,6 +83,26 @@ li {
   font-size: 60px;
   line-height: 90px;
   letter-spacing: -2px;
+}
+
+.view-all-link {
+  text-align: center;
+}
+
+.view-all-link a {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 800;
+  position: relative;
+}
+
+.view-all-link a::after {
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--themeColor);
 }
 
 /* ---------------
@@ -405,26 +427,6 @@ p {
   line-height: 54px;
 }
 
-.all-project-btn {
-  text-align: center;
-}
-
-.all-project-btn a {
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 800;
-  position: relative;
-}
-
-.all-project-btn a::after {
-  position: absolute;
-  content: '';
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  border-bottom: 2px solid var(--themeColor);
-}
-
 /* ---------------
     10. Team area style
 ------------------*/
@@ -587,5 +589,181 @@ p {
 .contact-detail p {
   font-size: 18px;
   line-height: 30px;
+}
+
+/* ---------------
+    13. Blog area style
+------------------*/
+.blog-area {
+  background: var(--grayBg);
+}
+
+.all-blog-link .view-all-link {
+  text-align: right;
+  margin-top: 100px;
+}
+
+.single-blog {
+  padding: 50px 40px;
+  border: 1px solid var(--borderColor);
+  border-radius: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.single-blog:hover {
+  background: var(--white);
+  border-color: transparent;
+}
+
+.single-blog .blog-title h5 {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.single-blog .blog-title h4 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.02px;
+}
+
+.single-blog .blog-title a:hover {
+  color: inherit;
+}
+
+.single-blog .blog-content {
+  margin-bottom: 30px;
+}
+
+.single-blog .blog-post-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-blog .post-admin a {
+  font-family: var(--overpassFont);
+  font-weight: 800;
+  font-size: 21px;
+}
+
+.single-blog .post-admin a img {
+  margin-right: 10px;
+}
+
+.single-blog .post-widget p {
+  color: #adb0ba;
+}
+
+.blog-wrapper .col-lg-4:nth-child(1) .blog-title h5 {
+  color: var(--pinkColor);
+}
+
+.blog-wrapper .col-lg-4:nth-child(2) .blog-title h5 {
+  color: var(--lightgreen);
+}
+
+.blog-wrapper .col-lg-4:nth-child(3) .blog-title h5 {
+  color: var(--yellowColor);
+}
+
+/* ---------------
+    14. Footer area style
+------------------*/
+.footer-top {
+  padding: 170px 0;
+}
+
+.footer-widget .footer-widget-logo {
+  margin-bottom: 40px;
+}
+
+.footer-widget .footer-widget-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-widget .footer-widget-content p i {
+  margin-right: 10px;
+}
+
+.footer-submit-form input {
+  font-size: 18px;
+  font-family: var(--robotoFont);
+  height: 66px;
+  background: #f3f9fb;
+  padding: 0 20px;
+  border: none;
+  border-radius: 7px;
+}
+
+.footer-submit-form button {
+  font-size: 24px;
+  padding: 0 20px;
+  background: #f3f9fb;
+  border: none;
+  border-radius: 7px;
+}
+
+.footer-about {
+  margin-left: 125px;
+}
+
+.footer-widget-title {
+  margin-bottom: 40px;
+}
+
+.footer-widget-title h4 {
+  font-size: 24px;
+}
+
+.footer-widget-content li a {
+  font-family: var(--robotoFont);
+  font-size: 18px;
+  color: var(--pColor);
+}
+
+.footer-widget-content li + li {
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  padding-bottom: 60px;
+}
+
+.footer-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6px;
+}
+
+.footer-social-link h5 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.copy-right-info {
+  text-align: right;
+}
+
+.copy-right-info p {
+  font-size: 18px;
+}
+
+.copy-right-info p span {
+  font-family: var(--overpassFont);
+  font-weight: 800;
+  color: var(--textColor);
 }
 /*# sourceMappingURL=style.css.map */
