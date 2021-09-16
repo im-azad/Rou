@@ -38,6 +38,9 @@ li {
 
 .standard-section {
 	padding: 165px 0 190px 0;
+	@media (max-width: 992px) {
+		padding: 100px 0 125px 0;
+	}
 }
 
 .section-title {
@@ -52,6 +55,10 @@ li {
 		font-size: 60px;
 		line-height: 90px;
 		letter-spacing: -2px;
+		@media (max-width: 992px) {
+			font-size: 40px;
+			line-height: 50px;
+		}
 	}
 }
 

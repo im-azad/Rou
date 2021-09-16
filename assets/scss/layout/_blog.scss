@@ -5,6 +5,10 @@
 	.view-all-link {
 		text-align: right;
 		margin-top: 100px;
+		@media (max-width: 992px) {
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -13,6 +17,12 @@
 	border: 1px solid var(--borderColor);
 	border-radius: 18px;
 	transition: 0.3s;
+	@media (max-width: 992px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 1200px) {
+		padding: 40px 25px;
+	}
 
 	&:hover {
 		background: var(--white);
