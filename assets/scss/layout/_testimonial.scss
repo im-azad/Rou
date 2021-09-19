@@ -12,16 +12,6 @@
 	}
 }
 .testimonial-content {
-	position: relative;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 25px;
-		left: -130px;
-		width: 80px;
-		height: 64px;
-		background: url(../images/testimonial/quote.png) no-repeat;
-	}
 	.section-title {
 		margin-bottom: 40px;
 	}
@@ -56,4 +46,11 @@
 
 .testimonial-thumb {
 	text-align: right;
+	@media (max-width: 1200px) {
+		text-align: center;
+		margin-top: 50px;
+		img {
+			width: 100%;
+		}
+	}
 }

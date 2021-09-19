@@ -9,6 +9,10 @@
 	padding: 90px 40px;
 	border: 6px solid;
 	border-radius: 18px;
+	transition: 0.3s;
+	&:hover {
+		box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.2);
+	}
 	@media (max-width: 992px) {
 		margin-bottom: 25px;
 		padding: 50px 30px;
