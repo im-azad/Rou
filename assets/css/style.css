@@ -235,6 +235,31 @@ p {
   color: var(--white);
 }
 
+#scrollTopBtn {
+  display: inline-block;
+  background-color: var(--themeColor);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  border: none;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+  background: var(--lightgreen);
+}
+
 /* ---------------
     04. Header style
 ------------------*/
